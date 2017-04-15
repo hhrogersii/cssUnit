@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test Harness Runner</title>
-    <link rel="stylesheet" href="testharness.css"/>
-    <script src="../../../include/javascript/jquery/jquery-min.js"></script>
-    <script src="../../../include/javascript/rgbcolor.js"></script>
+    <title>Global Test Runner</title>
+    <link rel="stylesheet" href="testharness/testharness.css"/>
+    <script src="../../include/javascript/jquery/jquery-min.js"></script>
+    <script src="../../include/javascript/rgbcolor.js"></script>
     <style>
-    #sugarcrm {
+    #spec_target {
         border: none;
         position: absolute;
-        left: -200px;
-        width: 100px;
-        height: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     </style>
 </head>
 <body>
-<h1>Test Harness Runner</h1>
-<div id="log"></div>
-<!-- <script src="testharness.js"></script> -->
-<!-- <script src="testharnessreport.js"></script> -->
-<iframe src="target.html" id="sugarcrm">
+    <h1>Global Test Runner</h1>
+    <h2>Sugar7 CSS Unit Tests</h2>
+    <ul id="specs">
+        <li><a href="target.html?test=1&spec=sugar7/index" target="spec_target">sugar7/index</a></li>
+        <li><a href="target.html?test=1&spec=sugar7/dashboard" target="spec_target">sugar7/dashboard</a></li>
+    </ul>
+    <hr>
+    <iframe src="target.html" id="spec_target" name="spec_target">
 </body>
 </html>

@@ -18,7 +18,6 @@
   "author": "Henry Rogers",
   "license": "MIT",
   "dependencies": {
-    "put-selector": "^0.3.6",
-    "testharness": "w3c/testharness.js"
+    "put-selector": "^0.3.6"
   }
 }

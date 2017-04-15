@@ -4,12 +4,13 @@ var cssTestRunner = function()
     {
         test(
             function() {
-                assert_equals(
-                   $(elm).css(prop), val
-                )
+                assert_equals($(elm).css(prop), val);
             },
             elm + ':' + prop + ' equals ' + val,
-            { timeout: 1000, label: label + ' <span class="selector">(' + elm + ')</span>' }
+            {
+                timeout: 1000,
+                label: label + ' <span class="selector">(' + elm + ')</span>'
+            }
         );
     }
 
@@ -20,12 +21,13 @@ var cssTestRunner = function()
 
         test(
             function() {
-                assert_equals(
-                    clr.toHex().toUpperCase(), val
-                )
+                assert_equals(clr.toHex().toUpperCase(), val);
             },
             elm + ':' + prop + ' equals ' + val,
-            { timeout: 1000, label: label }
+            {
+                timeout: 1000,
+                label: label
+            }
         );
     }
 
@@ -37,6 +39,7 @@ var cssTestRunner = function()
         {
             t = data[i];
             $('#target').append(t.dom);
+            // $('#target').append(document.createElement('span.field\n\tlabel "To: "\n\tinput'));
 
             cssTestRunner.go(t.label, t.selector, t.tests);
 
@@ -64,7 +67,6 @@ var cssTestRunner = function()
                 dataType: "json",
                 cache: false
             }).done($.proxy(function(data) {
-                // console.log("Success: " + data);
                 runSuite(data);
             }, this)).fail(function(xhr, status, error) {
                 console.log("Status: " + status + " Error: " + error);
@@ -149,15 +151,3 @@ var cssTestRunner = function()
         return root.childNodes.length === 1 ? root.lastChild : root;
     };
 })(document.createElement);
-
-
-$(document).ready(function() {
-    $('#target').append(document.createElement('span.field\n\tlabel "To: "\n\tinput'));
-    // generates <span class="field"><label>To: <input></label></span>)
-    // call as target.html?test=1&spec=sugar7/index
-    if (window.location.href.indexOf('test=1') !== -1)
-    {
-
-        cssTestRunner.load();
-    }
-});

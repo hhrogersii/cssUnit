@@ -1,7 +1,0 @@
-{
-  "name": "Generate CSS Test Spec",
-  "version": "1.1",
-  "description": "This extension generates a test spec from a selected dom element.",
-  "devtools_page": "devtools.html",
-  "manifest_version": 2
-}
