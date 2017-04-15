@@ -1,0 +1,262 @@
+[
+  {
+    "label": "Login Form Banner",
+    "dom": "<div class='modal-header tcenter'/>",
+    "selector": ".modal-header.tcenter",
+    "tests":
+    [
+        [ "border-bottom-style", "solid" ]
+      , [ "border-bottom-width", "1px" ]
+      , [ "font-family", "\"Helvetica Neue\", Arial, sans-serif" ]
+      , [ "font-size", "12px" ]
+      , [ "line-height", "18px" ]
+      , [ "padding-bottom", "9px" ]
+      , [ "padding-left", "15px" ]
+      , [ "padding-right", "15px" ]
+      , [ "padding-top", "9px" ]
+      , [ "text-align", "center" ]
+    ]
+  },
+  {
+    "label": "Headerpane Primary Button",
+    "dom": "<div id=\"sidecar\"><div id=\"content\"><div class=\"row-fluid\"><div class=\"dashboard\" data-dashboard=\"true\"><div class=\"cols row-fluid\"><div><div class=\"preview-headerbar\"><div class=\"headerpane\"><h1><div class=\"btn-toolbar pull-right dropdown\"><span sfuuid=\"14\" class=\"fieldset actions detail btn-group\"><span sfuuid=\"20\" class=\"detail\"><a id=\"testTarget\" class=\"rowaction btn btn-primary\" name=\"add_button\"></a></span><a class=\"btn\"></a></span></div></h1></div></div></div></div></div></div></div></div>",
+    "selector": "a.rowaction.btn.btn-primary",
+    "tests": [
+      [
+        "color",
+        "rgb(255, 255, 255)"
+      ],
+      [
+        "text-decoration",
+        "none"
+      ],
+      [
+        "display",
+        "inline-block"
+      ],
+      [
+        "margin-bottom",
+        "0px"
+      ],
+      [
+        "font-size",
+        "12px"
+      ],
+      [
+        "line-height",
+        "18px"
+      ],
+      [
+        "text-align",
+        "center"
+      ],
+      [
+        "vertical-align",
+        "middle"
+      ],
+      [
+        "cursor",
+        "pointer"
+      ],
+      [
+        "text-shadow",
+        "none"
+      ],
+      [
+        "background-color",
+        "rgb(23, 109, 229)"
+      ],
+      [
+        "background-image",
+        "linear-gradient(rgb(23, 109, 229), rgb(23, 109, 229))"
+      ],
+      [
+        "background-repeat-x",
+        ""
+      ],
+      [
+        "background-repeat-y",
+        ""
+      ],
+      [
+        "border-top-width",
+        "1px"
+      ],
+      [
+        "border-right-width",
+        "1px"
+      ],
+      [
+        "border-bottom-width",
+        "1px"
+      ],
+      [
+        "border-left-width",
+        "1px"
+      ],
+      [
+        "border-top-style",
+        "solid"
+      ],
+      [
+        "border-right-style",
+        "solid"
+      ],
+      [
+        "border-bottom-style",
+        "solid"
+      ],
+      [
+        "border-left-style",
+        "solid"
+      ],
+      [
+        "border-top-color",
+        "rgba(0, 0, 0, 0)"
+      ],
+      [
+        "border-right-color",
+        "rgba(0, 0, 0, 0)"
+      ],
+      [
+        "border-bottom-color",
+        "rgba(0, 0, 0, 0)"
+      ],
+      [
+        "border-left-color",
+        "rgba(0, 0, 0, 0)"
+      ],
+      [
+        "border-image-source",
+        "none"
+      ],
+      [
+        "border-image-slice",
+        "100%"
+      ],
+      [
+        "border-image-width",
+        "1"
+      ],
+      [
+        "border-image-outset",
+        "0px"
+      ],
+      [
+        "border-image-repeat",
+        "stretch"
+      ],
+      [
+        "border-top-left-radius",
+        "3px"
+      ],
+      [
+        "border-top-right-radius",
+        "0px"
+      ],
+      [
+        "border-bottom-right-radius",
+        "0px"
+      ],
+      [
+        "border-bottom-left-radius",
+        "3px"
+      ],
+      [
+        "box-shadow",
+        "none"
+      ],
+      [
+        "padding-top",
+        "4px"
+      ],
+      [
+        "padding-right",
+        "6px"
+      ],
+      [
+        "padding-bottom",
+        "4px"
+      ],
+      [
+        "padding-left",
+        "6px"
+      ],
+      [
+        "font-weight",
+        "500"
+      ],
+      [
+        "margin-left",
+        "0px"
+      ],
+      [
+        "position",
+        "relative"
+      ]
+    ]
+  },
+  {
+    "label": "Main Body Tag",
+    "dom": "<body></body>",
+    "selector": "body",
+    "tests": [
+      [
+        "margin-top",
+        "0px"
+      ],
+      [
+        "margin-right",
+        "0px"
+      ],
+      [
+        "margin-bottom",
+        "0px"
+      ],
+      [
+        "margin-left",
+        "0px"
+      ],
+      [
+        "font-family",
+        "\"Helvetica Neue\", Arial, sans-serif"
+      ],
+      [
+        "font-size",
+        "12px"
+      ],
+      [
+        "line-height",
+        "18px"
+      ],
+      [
+        "color",
+        "rgb(85, 85, 85)"
+      ],
+      [
+        "background-color",
+        "rgb(255, 255, 255)"
+      ],
+      [
+        "padding-top",
+        "0px"
+      ],
+      [
+        "padding-right",
+        "0px"
+      ],
+      [
+        "padding-bottom",
+        "0px"
+      ],
+      [
+        "padding-left",
+        "0px"
+      ],
+      [
+        "overflow-x",
+        "hidden"
+      ]
+    ]
+  }
+]

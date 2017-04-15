@@ -1,0 +1,24 @@
+{
+  "name": "cssUnit",
+  "version": "0.0.1",
+  "description": "A framework for unit testing css with spec generation tools",
+  "main": "unitcss.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhrogersii/cssUnit.git"
+  },
+  "keywords": [
+    "css",
+    "unit",
+    "tests"
+  ],
+  "author": "Henry Rogers",
+  "license": "MIT",
+  "dependencies": {
+    "put-selector": "^0.3.6",
+    "testharness": "w3c/testharness.js"
+  }
+}

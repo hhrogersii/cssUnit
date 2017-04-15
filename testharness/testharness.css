@@ -1,0 +1,116 @@
+html {
+    font-family:DejaVu Sans, Bitstream Vera Sans, Arial, Sans;
+}
+
+#log {
+    padding: 2em;
+}
+
+#log .warning,
+#log .warning a {
+  color: black;
+  background: yellow;
+}
+
+#log .error,
+#log .error a {
+  color: white;
+  background: red;
+}
+
+#log span.ok {
+    color:green;
+}
+
+#log tr.error {
+    color:red;
+}
+
+#log span.timeout {
+    color:red;
+}
+
+#log span.ok, #log span.timeout, #log span.error {
+    font-variant:small-caps;
+}
+#log section {
+    padding-top: 1em;
+}
+
+section#summary {
+    margin-bottom:1em;
+}
+table#results {
+    border-collapse:collapse;
+    width:100%;
+}
+
+table#results th:first-child,
+table#results td:first-child {
+    width:4em;
+}
+
+table#results th:last-child,
+table#results td:last-child {
+    width:50%;
+}
+
+table#results.assertions th:last-child,
+table#results.assertions td:last-child {
+    width:35%;
+}
+
+table#results th {
+    padding:0;
+    padding-top: 1em;
+    padding-bottom:0.5em;
+    border-bottom:medium solid black;
+}
+
+table#results td {
+    padding:1em;
+    padding-bottom:0.5em;
+    border-bottom:thin solid black;
+}
+
+table#results tr.pass > td:first-child {
+    color:green;
+}
+
+table#results tr.fail > td:first-child {
+    color:red;
+}
+
+table#results tr.timeout > td:first-child {
+    color:red;
+}
+
+table#results tr.notrun > td:first-child {
+    color:blue;
+}
+
+table#results .pass > td:first-child,
+table#results .fail > td:first-child,
+table#results .timeout > td:first-child,
+table#results .notrun > td:first-child {
+    font-variant:small-caps;
+}
+
+table#results span {
+    display:block;
+}
+table#results tr.test-label th {
+    text-align: left;
+}
+table#results span.selector {
+    display:inline;
+}
+table#results span.expected {
+    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;
+    white-space:pre;
+}
+
+table#results span.actual {
+    font-family:DejaVu Sans Mono, Bitstream Vera Sans Mono, Monospace;
+    white-space:pre;
+}
